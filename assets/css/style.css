@@ -1,0 +1,28 @@
+#reset {
+    background-color: darkgrey
+}
+
+#resetCol {
+	text-align: center;
+	
+}
+.jumbotron {
+    background-color: rgb(59, 184, 177);
+
+}
+.jumbotron h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center
+	
+}
+
+.jumbotron p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+    font-size: 20px;
+}
+
+#losses {
+    text-align: right
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- BOOTSTRAP 3: Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<!-- Linking jQuery CDN -->
+	 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Linking JAVASCRIPT -->
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+	<!-- Linking CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	
+	<title>Crystals Collector Game</title>
+	
+</head>
+<body>
+	
+<!-- Main jumbotron for Crystals Game -->
+<div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class=>The Crystal Collector Game</h1>
+          <p class=>You will be given a Starting number to start with. The goal of the game is to match your score to that number. To add points to your score, click on one of the crystals. Each crystal has a different value to add to your score.  Dont go over that number or you lose the game. Press reset to play again.</p>
+        </div>
+      </div>
+
+   
+<div class="container">
+    <div class="row">
+            <div class="col-lg-4" id="rndmNumnCol">
+                <h2> Starting Number</h2>
+                <p id="randomNumberID">___</p>
+            
+                </div>
+                <!-- Crystal Buttons-->
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="buttnsCol">
+                <!-- Sub Row & Columns-->
+                <div class="row">
+                    <!-- Green Gem-->
+                    <div class="col-lg-2">
+                        <img src="./assets/images/greencrystal.jpg"width= 110px height="140px" alt="Green Diamond" id="greenGem">
+                    </div>
+                    <!-- Red Gem-->
+                    <div class="col-lg-2">
+                        <img src="./assets/images/redcrystal.jpg"width= 110px height="140px" alt="Red Diamond" id="redGem">
+                    </div>
+                    <!-- Yellow Gem-->
+                    <div class="col-lg-2">
+                        <img src="./assets/images/yellowcrystal.jpg"width= 110px height="140px" alt="Yellow Diamond" id="yellowGem">
+                    </div>
+                    <!-- Purple Gem-->
+                    <div class="col-lg-2">
+                        <img src="./assets/images/purplecrystal.jpg"width= 110px height="140px" alt="Purple Diamond" id="purpleGem">
+                    </div>
+                </div>
+            </div>
+
+   <!--score-->
+   <div  class="col-md-2" id="scoreCol">
+       <H2>Your Score</H2>
+       <p id="yourScore">0</p>
+   </div>
+   
+</div>
+
+<div class="row">
+        <div class="col-md-12">
+            <h3 id="message"></h3>
+        </div>
+    </div>
+
+
+    <!-- New Row To Store Wins and Losses: -->
+    <div class="row" id="gameStats">
+
+        <!-- WINS -->
+        <div class="col-md-6">
+            <h2 id="wins">Wins: 0</h2>
+        </div>
+
+        <!-- LOSSES -->
+        <div class="col-md-6">
+            <h2 id="losses">Losses: 0</h2>
+        </div>
+
+    </div>
+
+    <!-- To Reset Game -->
+    <div class="row">
+
+        <!-- RESET -->
+        <div class="col-md-12" id="resetCol">
+            <button type="button" class="btn btn-default btn-lg" id="reset">RESET GAME</button>
+        </div>
+
+    </div>
+
+
+    
+</div>
+
+
+
+</body>
+</html>
